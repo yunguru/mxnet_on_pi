@@ -6,7 +6,7 @@ So, we will build object detection locally in Pi using MXNet. Then use Amazon Re
 
 
 Here is the architecture:
-
+![Architecture Diagram](mxnetpi.png)
 
 Prerequisites:
 
