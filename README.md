@@ -5,7 +5,7 @@ So, we will build object detection locally in Pi using MXNet. Then use Amazon Re
 
 
 
-Here is the architecture:
+Here is the architecture for finding "recyclable" objects:
 ![Architecture Diagram](mxnetpi.png)
 
 Prerequisites:
@@ -124,12 +124,12 @@ This completes IoT Setup
 In the working (i.e. mxnet) directory there are certificates named root-CA.crt, recyclesorter.private.key, recyclesorter.cert.pem.
 We will need those certs in our final code. 
 
-##### change recyclesorter.py code
-Let’s go look at the recyclesorter code (recyclesorter.py from src). Change following
-host = "aXXXXXXX.iot.us-west-2.amazonaws.com" (You can find the host name under start.sh or AWS IoT console, registry, things, check recyclesorter, under interact you wil see rest api endpoint bekow HTTPS)
+##### change mxnet_on_pi_object_identifier.py code
+Let’s go look at the recyclesorter code (mxnet_on_pi_object_identifier.py from src). Change following
+host = "XXXXXXXX.iot.xx-xxxx-x.amazonaws.com" (You can find the host name under start.sh or AWS IoT console, registry, things, check recyclesorter, under interact you wil see rest api endpoint bekow HTTPS)
 
 ``` python
-host = "axxxxxxx.iot.xx-xxx-x.amazonaws.com"
+host = "xxxxxxxx.iot.xx-xxx-x.amazonaws.com"
 rootCAPath = “root-CA.crt"
 certificatePath = "recyclesorter.cert.pem"
 privateKeyPath = "recyclesorter.private.key"
