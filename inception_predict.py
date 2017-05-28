@@ -1,4 +1,5 @@
 # inception_predict.py
+# Courtesy of instructions from https://github.com/dmlc/mxnet/blob/master/docs/tutorials/embedded/wine_detector.md
 
 import mxnet as mx
 import numpy as np
